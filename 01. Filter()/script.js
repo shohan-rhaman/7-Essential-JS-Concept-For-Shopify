@@ -6,7 +6,6 @@ const products = [
 ];
 
 // Without filter()
-
 const expensiveProducts = [];
 
 for (const product of products) {
@@ -16,3 +15,12 @@ for (const product of products) {
 }
 
 console.log("expensiveProducts>>", expensiveProducts)
+
+
+
+// with filter()
+const costlyProducts = products.filter(product =>{
+    return product.price > 100
+})
+
+console.log("costlyProduct>>", costlyProducts)
