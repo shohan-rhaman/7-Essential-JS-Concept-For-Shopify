@@ -24,3 +24,17 @@ const costlyProducts = products.filter(product =>{
 })
 
 console.log("costlyProduct>>", costlyProducts)
+
+
+// Shopify example
+const productCards = Array.from(document.querySelectorAll(".card"))
+
+// spread oporeator for making nodeList to array
+//const productCards = [...document.querySelectorAll(".card")];
+
+// ===== Now keep only shoes. ====== \\
+const shoes = productCards.filter(card =>{
+    return card.dataset.category === "shoes"
+})
+
+console.log("Shoes>>", shoes)

@@ -71,3 +71,16 @@ It only cares about:
 - true or false
 
 
+## Array Vs NodeList
+Array
+ ├── filter() ✅
+ ├── map() ✅
+ ├── sort() ✅
+ └── forEach() ✅
+
+NodeList
+ ├── forEach() ✅
+ ├── filter() ❌
+ ├── map() ❌
+ └── sort() ❌
+
