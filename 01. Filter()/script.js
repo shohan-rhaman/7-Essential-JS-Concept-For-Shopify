@@ -38,3 +38,27 @@ const shoes = productCards.filter(card =>{
 })
 
 console.log("Shoes>>", shoes)
+
+
+const numbers = [5, 12, 8, 25, 3];
+
+/*
+const greterNumbers = numbers.filter(number =>{
+    return number > 10
+    
+})
+
+console.log("greterNumbers", greterNumbers)
+*/
+
+// try it with forEach
+
+const greaterNumbers = [];
+
+numbers.forEach(num =>{
+    if(num > 10){
+        greaterNumbers.push(num)
+    }
+})
+
+console.log("greateNumbers", greaterNumbers)

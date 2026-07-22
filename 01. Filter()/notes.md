@@ -84,3 +84,9 @@ NodeList
  ├── map() ❌
  └── sort() ❌
 
+
+ ## Chalange Between filter vs  forEach 
+The difference is:
+- filter() automatically creates the new array for you.
+- With forEach(), you create the array yourself and use push().
+
