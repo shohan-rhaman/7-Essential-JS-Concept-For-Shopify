@@ -33,3 +33,14 @@ const greetings = products.map(product =>{
     return `Welcome ${product.name}`
 })
 console.log("Greetings >", greetings)
+
+
+// We can even return a new object with 10% discount
+const discountProducts = products.map(product =>{
+    return {
+        name: product.name,
+        discountPrice:  product.price * 0.9
+    }
+})
+
+console.log("discount products>", discountProducts)
