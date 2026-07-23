@@ -42,5 +42,18 @@ const discountProducts = products.map(product =>{
         discountPrice:  product.price * 0.9
     }
 })
-
 console.log("discount products>", discountProducts)
+
+
+const storeProducts = [
+    { name: "Nike", price: 120, stock: 5 },
+    { name: "Adidas", price: 90, stock: 0 },
+    { name: "Watch", price: 250, stock: 10 }
+];
+
+// we want to display products like this: "Nike - $120"
+
+const storeUpdatedProducts = storeProducts.map(product =>{
+    return `${product.name} - ${product.price}`
+})
+console.log("store updated products>", storeUpdatedProducts)
