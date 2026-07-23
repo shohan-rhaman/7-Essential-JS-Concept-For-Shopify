@@ -10,4 +10,12 @@ const names = products.map(product =>{
     return product.name;
 })
 
-console.log("product name>", names)
+console.log("product name>", names) 
+
+// Show every product with a 10% discount.
+
+const discountPrices = products.map(product =>{
+    return product.price * 0.9
+})
+
+console.log("discount prices>", discountPrices)
