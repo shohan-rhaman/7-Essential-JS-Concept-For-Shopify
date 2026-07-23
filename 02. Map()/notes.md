@@ -40,3 +40,32 @@ After:
 ]
 
 We transformed each object into a string.
+
+============================================================================
+
+## The easiest way to remember
+
+Think of these four methods like employees in a company:
+
+👷 forEach()
+- "I'll visit every item and do some work."
+
+🛂 filter()
+- "Only approved people can enter."
+
+Returns:
+- true or false
+
+🔀 sort()
+- "Stand in the correct order."
+
+Returns:
+- negative
+- positive
+- zero
+
+🎨 map()
+- "Everyone gets a makeover."
+
+Returns:
+- new value
