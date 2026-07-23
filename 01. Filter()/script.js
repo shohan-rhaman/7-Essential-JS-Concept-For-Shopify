@@ -62,3 +62,10 @@ numbers.forEach(num =>{
 })
 
 console.log("greateNumbers", greaterNumbers)
+
+
+function greet(name) {
+    return "Hello " + name;
+}
+
+console.log(greet("Shohan"));
