@@ -26,3 +26,10 @@ const increasedNumbers = numbers.map(number =>{
     return number + 5;
 })
 console.log("increased Number>", increasedNumbers);
+
+
+// transform each product into a completely new string
+const greetings = products.map(product =>{
+    return `Welcome ${product.name}`
+})
+console.log("Greetings >", greetings)
