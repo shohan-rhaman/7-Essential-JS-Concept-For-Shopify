@@ -26,3 +26,23 @@ const product = products.find(product =>{
     return product.id === 2;
 })
 console.log("Specific Product", product) // We get the whole object, not just the name.
+
+
+
+// ============================ Real Shopify Example ===================================
+
+const cart = [
+    { id: 1, name: "Nike", quantity: 2 },
+    { id: 2, name: "Watch", quantity: 1 },
+    { id: 3, name: "Cap", quantity: 5 }
+];
+
+// The customer wants to update the quantity of product id = 2.
+
+const foundCart = cart.find(product =>{
+    // first we need to find it
+    return product.id === 2;
+})
+// Now update the quantity
+foundCart.quantity = 3;
+console.log("Found Cart",foundCart);
