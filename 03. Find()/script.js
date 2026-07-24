@@ -25,4 +25,4 @@ const products = [
 const product = products.find(product =>{
     return product.id === 2;
 })
-console.log("Specific Product", product)
+console.log("Specific Product", product) // We get the whole object, not just the name.
