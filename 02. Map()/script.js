@@ -57,3 +57,45 @@ const storeUpdatedProducts = storeProducts.map(product =>{
     return `${product.name} - ${product.price}`
 })
 console.log("store updated products>", storeUpdatedProducts)
+
+
+// Because filter() returns a new array. And arrays have a .map() method.
+const availableProducts = storeProducts
+    .filter(product => {
+        return product.stock > 0;
+    })
+    .map(product => {
+        return `${product.name} ($${product.price})`;
+    });
+
+console.log(availableProducts);
+
+
+
+
+const martProducts = [
+    {
+        title: "Nike Shoes",
+        vendor: "Nike"
+    },
+    {
+        title: "Adidas Shoes",
+        vendor: "Adidas"
+    },
+    {
+        title: "Puma Shoes",
+        vendor: "Puma"
+    }
+];
+
+
+
+function showProducts(vendorName){
+    martProducts.forEach(product =>{
+        if(product.vendor === vendorName){
+            console.log(product.title)
+        }
+    })
+}
+
+showProducts("Puma")
