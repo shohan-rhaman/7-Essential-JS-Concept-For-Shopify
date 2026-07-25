@@ -46,3 +46,8 @@ const foundCart = cart.find(product =>{
 // Now update the quantity
 foundCart.quantity = 3;
 console.log("Found Cart",foundCart);
+
+const productName = cart.find(item => item.name === "Nike")
+productName.quantity = 10;
+
+console.log(productName)
