@@ -20,7 +20,21 @@ const cart = [
 ];
 
 // Display every product.
-const products = cart.forEach(product =>{
+const productsName = cart.forEach(product =>{
     console.log("Products", product.name)
 })
 // output: Nike, Watch
+
+
+
+// =================== Real Shopify Example 2 ===========================
+const products = [
+    { name: "Nike", price: 120 },
+    { name: "Watch", price: 250 }
+];
+
+// Display Prices
+const productPrice = products.forEach(product =>{
+    console.log(`${product.name} - $${product.price}`)
+})
+// OutPut: Nike - $120, Watch - $250
