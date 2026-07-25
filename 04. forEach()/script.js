@@ -10,3 +10,17 @@ const result = numbers.forEach(item =>{
 })
 console.log("Result", result);
 // result undefined
+
+
+// ================ Real Shopify Example 1 ==========================
+
+const cart = [
+    { name: "Nike", quantity: 2 },
+    { name: "Watch", quantity: 1 }
+];
+
+// Display every product.
+const products = cart.forEach(product =>{
+    console.log("Products", product.name)
+})
+// output: Nike, Watch
