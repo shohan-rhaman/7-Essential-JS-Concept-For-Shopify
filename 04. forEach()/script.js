@@ -38,3 +38,14 @@ const productPrice = products.forEach(product =>{
     console.log(`${product.name} - $${product.price}`)
 })
 // OutPut: Nike - $120, Watch - $250
+
+
+
+// ====================== Real Shopify Example 3 =======================
+// Imagine product cards already exist in HTML.
+const productCards = document.querySelectorAll(".card");
+
+// Add a class to every card.
+productCards.forEach(card =>{
+    card.classList.add("active")
+})
