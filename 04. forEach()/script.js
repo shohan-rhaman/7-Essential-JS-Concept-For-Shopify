@@ -49,3 +49,10 @@ const productCards = document.querySelectorAll(".card");
 productCards.forEach(card =>{
     card.classList.add("active")
 })
+
+
+const colors = ["Red", "Blue", "Green"];
+
+const colorVariation = colors.forEach(color =>{
+    console.log("Color:", color)
+})
