@@ -21,3 +21,35 @@ It always returns:
                   - false
 
 Nothing else.
+
+
+==========================================================
+
+## Real Shopify Situation
+
+Suppose a user clicks Add to Cart.
+
+Before adding, you want to check: "Is this product already in the cart?"
+You don't need the whole object.
+
+You only need to know:
+                      - Yes
+                           or
+                      - No
+
+Perfect use case:
+
+const exists = cart.some(item => item.id === 5);
+
+if (exists) {
+    console.log("Already in cart");
+}
+
+
+=======================================================
+## find() vs filter() vs some()
+
+Method                                  Return
+find()    --------------------------    First matching item
+filter()  --------------------------    New array of all matches
+some()    --------------------------    true or false
