@@ -19,3 +19,17 @@ const hasOutOfStock = products.some(product =>{
     return product.stock === 0
 })
 console.log("Out of stock", hasOutOfStock) // Return: true
+
+
+
+//=============== Another Shopify Example ====================
+const cart = [
+    { name: "Nike", quantity: 2 },
+    { name: "Watch", quantity: 1 }
+];
+// Q: Does the cart already contain a Watch?
+
+const hasWatch = cart.some(product =>{
+    return product.name === "Watch"
+})
+console.log("is watch exist", hasWatch) // Return: True
