@@ -33,3 +33,18 @@ const hasWatch = cart.some(product =>{
     return product.name === "Watch"
 })
 console.log("is watch exist", hasWatch) // Return: True
+
+
+
+//=========== Difference between find() and some() ==================
+const storeProducts = [
+    { name: "Nike", stock: 5 },
+    { name: "Adidas", stock: 0 }
+];
+// find()
+const product = storeProducts.find(product => product.stock === 0);
+console.log("prodcut", product) // Return: Object { name: "Adidas", stock: 0 }
+
+// some()
+const result2 = storeProducts.some(product => product.stock === 0);
+console.log("Result", result2) // Return: True
