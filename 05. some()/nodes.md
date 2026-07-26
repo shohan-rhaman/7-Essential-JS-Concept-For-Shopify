@@ -53,3 +53,25 @@ Method                                  Return
 find()    --------------------------    First matching item
 filter()  --------------------------    New array of all matches
 some()    --------------------------    true or false
+
+
+
+## 🧠 Memory Trick
+
+Imagine you're looking for a red shirt in a store.
+
+find()
+Bring me the first red shirt.
+Returns: 👕
+
+
+
+filter()
+Bring me every red shirt.
+Returns: 👕 👕 👕
+
+
+
+some()
+Is there any red shirt?
+Returns: Yes ✅ or No ❌
