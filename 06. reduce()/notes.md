@@ -46,3 +46,26 @@ Very often. Examples:
 
 ✅ Total tax
 = $32
+
+
+
+=================================================
+
+## Why reduce() is perfect here
+
+Imagine you have 100 products. Would you do this?
+
+const total =
+cart[0].price * cart[0].quantity +
+cart[1].price * cart[1].quantity +
+cart[2].price * cart[2].quantity +
+// ...
+
+❌ Impossible to maintain.
+
+Instead:
+
+const total = cart.reduce(...); works whether you have:
+- 3 products ✅
+- 30 products ✅
+- 3,000 products ✅
