@@ -37,9 +37,9 @@ console.log("Total Cart Price:", totalPrice) // Return: 410
 
 
 // ==================== accumulator (sum) ================
-const numbers = [1, 2, 3];
+const numbers1 = [1, 2, 3];
 
-const total = numbers.reduce((sum, number) => {
+const total2 = numbers1.reduce((sum, number) => {
     console.log("Before:", sum, number);
 
     const result = sum + number;
@@ -48,3 +48,17 @@ const total = numbers.reduce((sum, number) => {
 
     return result;
 }, 0);
+
+
+
+// =================== Final Challenge ======================
+const cart3 = [
+    { name: "Nike", price: 120, quantity: 2 },
+    { name: "Watch", price: 250, quantity: 1 },
+    { name: "Cap", price: 40, quantity: 3 }
+];
+// Q: Calculate the total cart value.
+const totalCartValue = cart3.reduce((totalCart, product)=>{
+    return totalCart + product.price * product.quantity;
+}, 0)
+console.log("Toatal Cart Value", totalCartValue)
