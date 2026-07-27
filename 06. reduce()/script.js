@@ -17,3 +17,18 @@ const totalQuantity = cart.reduce((totalCart, product) =>{
     return totalCart + product.quantity
 }, 0)
 console.log("Total Cart", totalQuantity) // Return: 8
+
+
+
+
+// ================== Shopify Example 2 =======================
+const cart2 = [
+    { name: "Nike", price: 120 },
+    { name: "Watch", price: 250 },
+    { name: "Cap", price: 40 }
+];
+// Q: Calculate cart price.
+const totalPrice = cart2.reduce((totalCart, product)=>{
+    return totalCart + product.price
+}, 0)
+console.log("Total Cart Price:", totalPrice) // Return: 410
