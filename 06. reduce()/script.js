@@ -32,3 +32,19 @@ const totalPrice = cart2.reduce((totalCart, product)=>{
     return totalCart + product.price
 }, 0)
 console.log("Total Cart Price:", totalPrice) // Return: 410
+
+
+
+
+// ==================== accumulator (sum) ================
+const numbers = [1, 2, 3];
+
+const total = numbers.reduce((sum, number) => {
+    console.log("Before:", sum, number);
+
+    const result = sum + number;
+
+    console.log("After:", result);
+
+    return result;
+}, 0);

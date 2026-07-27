@@ -12,6 +12,8 @@ const total = numbers.reduce((sum, number)=>{
 
 sum = 0;
 
+Most beginners think the accumulator (sum) is magic. It isn't. It simply stores whatever you returned last time.
+
 ============================================================
 
 ## Comparison
